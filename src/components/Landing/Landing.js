@@ -6,7 +6,7 @@ const Landing = () => {
     <div className={styles.container}>
       <h1><span>M</span>oć <span id={styles.span}>b</span>orilačkih veština<br/>u tvom telu i umu!</h1>
       <br/>
-      <a href={"#"}>UPIŠI SE</a>
+      <a href={"/#form"}>UPIŠI SE</a>
     </div>
   )
 }

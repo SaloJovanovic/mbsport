@@ -1,9 +1,10 @@
-.container {
+  .container {
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
   .naslov {
+    text-align: center;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('../../images/bg.jpg');
     background-repeat: no-repeat;
@@ -13,9 +14,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    h1 {
-      font-size: 4rem;
-      font-family: "Oswald", sans-serif;
+    div {
+      padding: 10px;
+      h1 {
+        font-size: 4rem;
+        font-family: "Oswald", sans-serif;
+      }
+      p {
+        font-family: "Jost", sans-serif;
+        font-weight: bold;
+      }
     }
   }
   ul {
@@ -53,7 +61,8 @@
         transition: 0.5s;
         text-decoration: none;
         color: white;
-        font-family: "Oswald", sans-serif;
+        font-family: "Jost", sans-serif;
+        font-weight: bold;
       }
       &:before {
         content: "";

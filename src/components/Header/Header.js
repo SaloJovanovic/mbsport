@@ -72,7 +72,7 @@ const Header = () => {
           <a className={styles.navbtn} onClick={() => {
             if (menuClicked)
               setMenuClicked(false);
-          }} href={'/'}>UPIŠI SE</a>
+          }} href={'/#form'}>UPIŠI SE</a>
         </li>
       </ul>
       <ul id={styles.ul2}>
@@ -81,7 +81,7 @@ const Header = () => {
         <li><a href="/">BLOG</a></li>
         <li><a href="/mawashi">MAWASHI KUP</a></li>
         <li><a href="/">PRIJAVA ZA TURNIR</a></li>
-        <li className={styles.navbtn}><a href="/">UPIŠI SE</a></li>
+        <li className={styles.navbtn}><a href="/#form">UPIŠI SE</a></li>
       </ul>
     </div>
   )
