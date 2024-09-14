@@ -25,12 +25,14 @@ const Header = () => {
       <ul id={styles.ul1}>
         <img src={logo}/>
       </ul>
-      <div onClick={() => {if (menuClicked) {
-        setMenuClicked(false);
-      }
-      else {
-        setMenuClicked(true);
-      }}} className={menuClicked ? styles.burger + " " + styles.clicked : styles.burger}>
+      <img className={styles.logoResp} src={logo}/>
+      <div onClick={() => {
+        if (menuClicked) {
+          setMenuClicked(false);
+        } else {
+          setMenuClicked(true);
+        }
+      }} className={menuClicked ? styles.burger + " " + styles.clicked : styles.burger}>
         <div className={styles.line} id={styles.line1}></div>
         <div className={styles.line} id={styles.line2}></div>
         <div className={styles.line} id={styles.line3}></div>
@@ -52,10 +54,22 @@ const Header = () => {
           <a onClick={() => {
             if (menuClicked)
               setMenuClicked(false);
-          }} href={'/cart'}>PRIJAVA ZA TURNIR</a>
+          }} href={'/'}>BLOG</a>
         </li>
         <li>
           <a onClick={() => {
+            if (menuClicked)
+              setMenuClicked(false);
+          }} href={'/mawashi'}>MAWASHI KUP</a>
+        </li>
+        <li>
+          <a onClick={() => {
+            if (menuClicked)
+              setMenuClicked(false);
+          }} href={'/'}>PRIJAVA ZA TURNIR</a>
+        </li>
+        <li>
+          <a className={styles.navbtn} onClick={() => {
             if (menuClicked)
               setMenuClicked(false);
           }} href={'/'}>UPIŠI SE</a>
@@ -64,6 +78,8 @@ const Header = () => {
       <ul id={styles.ul2}>
         <li><a href="/">POČETNA</a></li>
         <li><a href="/">BIVŠI SPORTISTI</a></li>
+        <li><a href="/">BLOG</a></li>
+        <li><a href="/mawashi">MAWASHI KUP</a></li>
         <li><a href="/">PRIJAVA ZA TURNIR</a></li>
         <li className={styles.navbtn}><a href="/">UPIŠI SE</a></li>
       </ul>

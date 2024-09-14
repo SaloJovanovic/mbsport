@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 .container {
+  .logoResp {
+    display: none;
+  }
   position: fixed;
   display: flex;
   //background-color: white;
@@ -95,14 +98,15 @@
       align-items: center;
       flex-direction: column;
       text-align: center;
-      top: 70px;
+      top: 55px;
       height: auto;
       width: 100%;
       opacity: 1;
       position: fixed;
       left: -200%;
       transition: all 200ms ease;
-      background: rgb(0, 50, 0);
+      background: white;
+      border-bottom: 2px solid #acacac;
       &.clicked {
         opacity: 1;
         left: 0px;
@@ -112,7 +116,7 @@
         //padding: 50px 0;
         a {
           display: block;
-          color: whitesmoke;
+          color: #282c34;
           font-weight: bold;
           width: 100%;
           font-size: 1.2rem;
@@ -122,6 +126,14 @@
           }
         }
       }
+      .navbtn {
+        background: #982c2c;
+        color: whitesmoke;
+      }
+    }
+    .logoResp {
+      display: block;
+      width: 50px;
     }
     .burger {
       width: 30px;
@@ -132,7 +144,7 @@
       .line {
         height: 4px;
         width: 100%;
-        background: rgb(0, 50, 0);
+        background: whitesmoke;
         transition: rotate 0.5s ease;
       }
       &.clicked {
@@ -177,14 +189,14 @@
       align-items: center;
       flex-direction: column;
       text-align: center;
-      top: 70px;
+      top: 55px;
       height: auto;
       width: 100%;
       opacity: 1;
       position: fixed;
       left: -200%;
       transition: all 200ms ease;
-      background: rgb(0, 50, 0);
+      //background: rgb(0, 50, 0);
       &.clicked {
         opacity: 1;
         left: 0px;
@@ -194,7 +206,7 @@
         //padding: 50px 0;
         a {
           display: block;
-          color: whitesmoke;
+          color: #282c34;
           font-weight: bold;
           width: 100%;
           font-size: 1.2rem;
@@ -204,6 +216,13 @@
           }
         }
       }
+      .navbtn {
+        background: #982c2c;
+        color: whitesmoke;
+      }
+    }
+    .logoResp {
+      display: block;
     }
     .burger {
       width: 30px;
@@ -214,7 +233,7 @@
       .line {
         height: 4px;
         width: 100%;
-        background: rgb(0, 50, 0);
+        background: black;
         transition: rotate 0.5s ease;
       }
       &.clicked {
