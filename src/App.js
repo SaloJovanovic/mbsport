@@ -13,6 +13,7 @@ import MawashiKup2017 from "./components/MawashiKup/MawashiKup2017";
 import MawashiKup2015 from "./components/MawashiKup/MawashiKup2015";
 import { useEffect, useState } from "react";
 import videoLoader from "./images/JudoSuit.mp4";
+import UnderConstruction from "./components/UnderConstruction/UnderConstruction";
 
 function App() {
   const [loading, setLoading] = useState(false); // Loader je po defaultu false
@@ -57,8 +58,10 @@ function App() {
           <Route path="/mawashi/2018" element={<MawashiKup2018 />} />
           <Route path="/mawashi/2017" element={<MawashiKup2017 />} />
           <Route path="/mawashi/2015" element={<MawashiKup2015 />} />
+          <Route path="/bivsi-sportisti" element={<UnderConstruction />} />
+          <Route path="/blog" element={<UnderConstruction />} />
         </Routes>
-        {/* <Footer /> */}
+         <Footer />
       </BrowserRouter>
     </div>
   );

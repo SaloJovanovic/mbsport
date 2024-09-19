@@ -81,7 +81,9 @@
       img {
         border-radius: 16px;
         width: 100%;
-        max-width: 400px;
+        //max-width: 400px;
+        width: auto;
+        max-height: 400px;
         //min-width: 200px;
         transition: all 300ms ease;
       }
@@ -110,6 +112,24 @@
       }
       img {
         width: 250px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .container {
+    h1 {
+      font-size: 3.5rem;
+      margin: 0px;
+    }
+    .cards {
+      .card {
+        img {
+          max-width: 100%;
+        }
+        height: auto;
       }
     }
   }
