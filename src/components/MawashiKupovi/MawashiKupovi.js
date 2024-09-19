@@ -11,9 +11,9 @@ const MawashiKupovi = () => {
         </div>
         <ul>
           <li><a href={'/mawashi/2023'}>2023</a></li>
-          <li><a href={'#'}>2018</a></li>
-          <li><a href={'#'}>2017</a></li>
-          <li><a href={'#'}>2015</a></li>
+          <li><a href={'/mawashi/2018'}>2018</a></li>
+          <li><a href={'/mawashi/2017'}>2017</a></li>
+          <li><a href={'/mawashi/2015'}>2015</a></li>
         </ul>
       </div>
     </div>

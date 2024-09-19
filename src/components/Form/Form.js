@@ -96,13 +96,13 @@ const Form = () => {
           onChange={(e) => setBrTelefona(e.target.value)}
         />
         <input
-          placeholder="Da li si ranije trenirao i koji/e sport/ove?"
+          placeholder="Da li si ranije trenirao/la i koji/e sport/ove?"
           type="tel"
           value={brTelefona}
           onChange={(e) => setSportovi(e.target.value)}
         />
         <input
-          placeholder="Koliko dugo si trenirao svaki od sportova?"
+          placeholder="Koliko dugo si trenirao/la svaki od sportova?"
           type="tel"
           value={brTelefona}
           onChange={(e) => setDuzinaSportovi(e.target.value)}

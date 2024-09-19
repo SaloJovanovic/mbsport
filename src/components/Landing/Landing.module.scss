@@ -11,6 +11,22 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
+  h2 {
+    background: #982c2c;
+    font-size: 2rem;
+    color: whitesmoke;
+    padding: 5px 10px;
+    animation: animateThis 1s ease-in forwards;
+  }
+
+  @keyframes animateThis {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   h1 {
     margin: 0;
     font-size: 7rem;

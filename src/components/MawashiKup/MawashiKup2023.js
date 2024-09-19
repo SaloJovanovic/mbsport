@@ -877,6 +877,16 @@ const MawashiKup2023 = () => {
           <li><a
             href={'https://www.mb-sportklub.com/wp-content/uploads/2023/02/Broj-prijavljenih-takmicara-i-ekipa-MB-Mawashi-Kup-2023.pdf'}>Broj
             prijavljenih takmičara i ekipa – MB Mawashi Kup 2023</a></li>
+          <li><a
+            href={'https://www.mb-sportklub.com/wp-content/uploads/2023/02/MB-Mawashi-kup-Zreb.pdf'}>Žreb – MB Mawashi
+            Kup 2023</a></li>
+          <li><a
+            href={'https://www.mb-sportklub.com/wp-content/uploads/2023/02/MB-Internacionalni-kup-veterana-ZREB.pdf'}>Internacionalni
+            kup veterana - žreb – MB Mawashi
+            Kup 2023</a></li>
+          <li><a
+            href={'https://www.mb-sportklub.com/wp-content/uploads/2023/02/Mawashi-kup-Plan-takmicenja.pdf'}>Plan takmičenja – MB Mawashi
+            Kup 2023</a></li>
         </ul>
         <p>Izvandrednu atmosferu sa turnira možete pogledati na slikama ispod.</p>
         <p><b>Pripreme i otvaranje turnira</b></p>
@@ -895,6 +905,16 @@ const MawashiKup2023 = () => {
         <ImageGallery items={klubovi}/>
         <p><b>MB Sport</b></p>
         <ImageGallery items={mbsport}/>
+        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/14page0001-791x1024.jpg"}/>
+        <h2>Opšte informacije</h2>
+        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/14page0002-791x1024.jpg"}/>
+        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/page0002eng-791x1024.jpg"}/>
+        <h2>Obaveze takmičara</h2>
+        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/14page0003-791x1024.jpg"}/>
+        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/page0003eng-791x1024.jpg"}/>
+        <h2>Discipline i kategorije</h2>
+        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/14page0004-791x1024.jpg"}/>
+        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/page0004eng-791x1024.jpg"}/>
       </div>
     </div>
   )
