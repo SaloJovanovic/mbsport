@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import styles from "./Treneri.module.scss"
 import img1 from "../../images/viber_image_2024-09-13_14-03-48-331.jpg";
 import img2 from "../../images/viber_image_2024-09-13_14-03-48-551.jpg";
+import bane from "../../images/bane.jpeg";
 import { IoMdSchool } from "react-icons/io";
 import { MdOutlineSportsMartialArts } from "react-icons/md";
 import { FaMedal } from "react-icons/fa6";
@@ -23,16 +24,18 @@ const Treneri = () => {
         <div className={card1Full ? styles.card + " " + styles.full
         : card2Full ? styles.card + " " + styles.min : styles.card} id={styles.card1}>
           <div>
-            <img src={img1}/>
+            <img src={bane}/>
             <h1>BRANISLAV MILENKOVIĆ</h1>
             <ul>
-              <li><IoMdSchool />Diplomirani profesor sporta i fizičke kulture</li>
-              <li><IoMdSchool />Trenerska licenca od 1996. godine u kontinuitetu</li>
-              <li><IoMdSchool />Trenerska licenca od 1996. godine u kontinuitetu</li>
-              <li><IoMdSchool />Aktivni član načelnog odbora BKS-a (Beogradskog karate saveza)</li>
-              <li><IoMdSchool />Redovan član stručne komisije Sportskog saveza Zvezdara</li>
+              <li><IoMdSchool/>Diplomirani profesor sporta i fizičke kulture</li>
+              <li><IoMdSchool/>Trenerska licenca od 1996. godine u kontinuitetu</li>
+              <li><IoMdSchool/>Trenerska licenca od 1996. godine u kontinuitetu</li>
+              <li><IoMdSchool/>Aktivni član Nadzornog odbora BKS-a (Beogradskog karate saveza)</li>
+              <li><IoMdSchool/>Redovan član Edukativne komisije Sportskog saveza Zvezdara</li>
+              <li><IoMdSchool/>Internacionalni sudija u Karate sportu</li>
               {card1Full ?
                 <div className={styles.additional}>
+                  <li><IoMdSchool/>Internacionalni Medijator za rešavanje sudskih sporova mirnim putem</li>
                   <li><IoMdSchool/>Sportska akademija Beograd (2004-2006)</li>
                   <li><IoMdSchool/>Fakultet sporta i turizma Novi Sad (2008-2012)</li>
                   <li><IoMdSchool/>Fakultet sportskih nauka (pedagoško-nastavni smer, 2014-2018)</li>
@@ -44,7 +47,8 @@ const Treneri = () => {
                   <li><IoMdSchool/>Vojna akademija vojske Srbije - instruktor borilačkih sekcija KARATE, JU-JUTSU i
                     SAMOODBRANA (2012-2019).
                   </li>
-                  <li><IoMdSchool/>Jedan od rukovodilaca-instruktora internacionalnog kampa borilačkih veština vojinh specijalnih jedinica Vojske Srbije (Kopaonik 2014.)
+                  <li><IoMdSchool/>Jedan od rukovodilaca-instruktora internacionalnog kampa borilačkih veština vojinh
+                    specijalnih jedinica Vojske Srbije (Kopaonik 2014.)
                   </li>
                 </div>
                 :
@@ -81,7 +85,7 @@ const Treneri = () => {
                   </li>
                   <li><FaMedal/>Bronzana medalja - borbe pojedinačno - Evropsko prvenstvo, Pariz 2009.</li>
                   <li><FaMedal/>Srebrna medalja - regionalno ekpino prvenstvno Evrope, Ankara 2014.</li>
-                  <li><FaMedal/>Bronzana medalja - borbe ekipno - svetsko ????? prvenstvo</li>
+                  <li><FaMedal/>Bronzana medalja - borbe ekipno - svetsko univerzitetsko prvenstvo u Crnoj Gori, Bar 2012.</li>
                   <li><FaMedal/>Srebrna medalja - borbe pojedinačno - prvenstvo Mediterana</li>
                 </div>
                 :

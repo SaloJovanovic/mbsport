@@ -81,7 +81,9 @@
       img {
         border-radius: 16px;
         width: 100%;
-        max-width: 400px;
+        //max-width: 400px;
+        width: auto;
+        max-height: 400px;
         //min-width: 200px;
         transition: all 300ms ease;
       }

@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, {useRef, useState} from "react";
 import styles from "./Form.module.scss";
+import emailjs from '@emailjs/browser';
 
 const Form = () => {
   const [isFocused, setIsFocused] = useState(false);
@@ -34,16 +35,44 @@ const Form = () => {
     setDatumRodjenja(formattedDate);
   };
 
+  const form = useRef();
+
+  const[error, setError] = useState(false);
+  const[sent, setSent] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_dwhgdpk', 'template_j3zvf1m', form.current, {
+        publicKey: 'dLLeBmo7oWMwgGDGP',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          setError(false);
+          setSent(true);
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          setError(true);
+          setSent(true);
+        },
+      );
+  };
+
   return (
     <div id={"form"} className={styles.container}>
       <h1>Upiši se <span>besplatno</span> do kraja septembra!</h1>
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <input
           className={`${styles.chosen_value} ${isFocused ? styles.open : ""}`}
           type="text"
+          required={true}
           value={selectedValue}
           placeholder="Izaberi grupaciju"
           onClick={toggleDropdown}
+          name="grupacija"
           readOnly
         />
         <ul className={`${styles.value_list} ${isFocused ? styles.open : ""}`}>
@@ -54,61 +83,83 @@ const Form = () => {
           ))}
         </ul>
         <input
+          required={true}
           type="text"
           placeholder="Ime"
           value={ime}
+          name={"ime"}
           onChange={(e) => setIme(e.target.value)}
         />
         <input
+          required={true}
           type="text"
           placeholder="Prezime"
           value={prezime}
+          name={"prezime"}
           onChange={(e) => setPrezime(e.target.value)}
         />
         <input
+          required={true}
           type="text"
           placeholder="Adresa"
           value={adresa}
+          name={"adresa"}
           onChange={(e) => setAdresa(e.target.value)}
         />
         <input
+          required={true}
           type="text"
           placeholder="Mail"
           value={mail}
+          name={"mail"}
           onChange={(e) => setMail(e.target.value)}
         />
         {/* Koristi input tipa text za datum */}
         <input
+          required={true}
           type="date"
           id={styles.datum}
+          name={"datum_rodjenja"}
           onChange={handleDateChange}
         />
         <input
+          required={true}
           type="text"
           placeholder="Datum rođenja"
           value={datumRodjenja} // Prikazujemo formatiran datum
           readOnly
         />
         <input
+          required={true}
           placeholder="Broj telefona"
           type="tel"
           value={brTelefona}
+          name={"broj_telefona"}
           onChange={(e) => setBrTelefona(e.target.value)}
         />
         <input
+          required={true}
           placeholder="Da li si ranije trenirao i koji/e sport/ove?"
-          type="tel"
-          value={brTelefona}
+          type="text"
+          value={sportovi}
+          name={"sportovi"}
           onChange={(e) => setSportovi(e.target.value)}
         />
         <input
+          required={true}
           placeholder="Koliko dugo si trenirao svaki od sportova?"
-          type="tel"
-          value={brTelefona}
+          type="text"
+          value={duzinaSportovi}
+          name={"duzina"}
           onChange={(e) => setDuzinaSportovi(e.target.value)}
         />
-        <input id={styles.btn} value={"UPIŠI SE"} type={"button"}/>
-      </form>
+        <input id={styles.btn} value={"UPIŠI SE"} type={"submit"}/>
+        {
+          sent && !error ? <h3 id={styles.success}>Uspešno poslato!</h3> :
+            sent && error ? <h3 id={styles.error}>Došlo je do greške...</h3> :
+              <></>
+        }
+          </form>
     </div>
   );
 };

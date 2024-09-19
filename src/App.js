@@ -21,7 +21,7 @@ function App() {
           <Route path="/mawashi" element={<><MawashiKupovi/></>}/>
           <Route path="/mawashi/2023" element={<><MawashiKup2023/></>}/>
         </Routes>
-        {/*<Footer />*/}
+        <Footer />
       </BrowserRouter>
     </div>
   );

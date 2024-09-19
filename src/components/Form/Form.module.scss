@@ -41,6 +41,12 @@
       margin-top: 10px;
       //width: 200px;
     }
+    #success {
+      color: green;
+    }
+    #error {
+      color: #982c2c;
+    }
   }
 
   .chosen_value,
@@ -149,6 +155,15 @@
         padding: 0;
         opacity: 0;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    h1 {
+      font-size: 3.5rem;
+      margin: 10px;
     }
   }
 }
