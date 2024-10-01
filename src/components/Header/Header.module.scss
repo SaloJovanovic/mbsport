@@ -31,6 +31,11 @@
         color: whitesmoke;
         text-decoration: none;
       }
+      #changeColor {
+        background: #2c3e98;
+        padding: 10px 20px;
+        border-radius: 16px;
+      }
     }
     .navbtn {
       a {
@@ -63,6 +68,9 @@
         z-index: 100;
         color: black;
         text-decoration: none;
+      }
+      #changeColor {
+        color: whitesmoke !important;
       }
     }
     .navbtn {
@@ -126,6 +134,11 @@
           path {
             color: whitesmoke !important;
           }
+        }
+        #changeColor {
+          color: whitesmoke;
+          border-radius: 0;
+          padding: 30px 0;
         }
       }
       .navbtn {

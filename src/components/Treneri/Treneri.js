@@ -25,31 +25,33 @@ const Treneri = () => {
         : card2Full ? styles.card + " " + styles.min : styles.card} id={styles.card1} id="branislav">
           <div>
             <img src={bane}/>
-            <h1>BRANISLAV MILENKOVIĆ</h1>
+            <h1>BRANISLAV - BANE MILENKOVIĆ</h1>
             <ul>
               <li><IoMdSchool/>Diplomirani profesor sporta i fizičke kulture</li>
               <li><IoMdSchool/>Trenerska licenca od 1996. godine u kontinuitetu</li>
               <li><IoMdSchool/>Trenerska licenca od 1996. godine u kontinuitetu</li>
+              <li><IoMdSchool/>Internacionalni sudija u Karate sportu</li>
               <li><IoMdSchool/>Aktivni član Nadzornog odbora BKS-a (Beogradskog karate saveza)</li>
               <li><IoMdSchool/>Redovan član Edukativne komisije Sportskog saveza Zvezdara</li>
-              <li><IoMdSchool/>Internacionalni sudija u Karate sportu</li>
               {card1Full ?
                 <div className={styles.additional}>
-                  <li><IoMdSchool/>Internacionalni Medijator za rešavanje sudskih sporova mirnim putem</li>
+                  <li><IoMdSchool/>Medijator sa licencom Ministarstva pravosuđa za rešavanje sudskih sporova mirnim
+                    putem
+                  </li>
                   <li><IoMdSchool/>Sportska akademija Beograd (2004-2006)</li>
                   <li><IoMdSchool/>Fakultet sporta i turizma Novi Sad (2008-2012)</li>
                   <li><IoMdSchool/>Fakultet sportskih nauka (pedagoško-nastavni smer, 2014-2018)</li>
-                  <li><IoMdSchool/>27. juna 2024. stekao licencu WFK (Svetske karate federacije)</li>
-                  <li><MdOutlineSportsMartialArts/><p>Majstorsko zvanje KARATE-a - crni pojas <b>3. DAN</b></p></li>
-                  <li><MdOutlineSportsMartialArts/><p>Majstorsko zvanje JUDO-a - crni pojas <b>3. DAN</b></p></li>
-                  <li><MdOutlineSportsMartialArts/><p>Majstorsko zvanje JU-JUTSU-a - crni pojas <b>5. DAN</b></p></li>
                   <li><IoMdSchool/>Diplomirani instruktor japanske JU-JUTSU veštine - Faukltet sporta Novi Sad</li>
+                  <li><IoMdSchool/>Stekao licencu WFK (Svetske karate federacije)</li>
                   <li><IoMdSchool/>Vojna akademija vojske Srbije - instruktor borilačkih sekcija KARATE, JU-JUTSU i
                     SAMOODBRANA (2012-2019).
                   </li>
-                  <li><IoMdSchool/>Jedan od rukovodilaca-instruktora internacionalnog kampa borilačkih veština vojinh
+                  <li><IoMdSchool/>Jedan od rukovodilaca-instruktora internacionalnog kampa borilačkih veština vojnih
                     specijalnih jedinica Vojske Srbije (Kopaonik 2014.)
                   </li>
+                  <li><MdOutlineSportsMartialArts/><p>Majstorsko zvanje KARATE-a - crni pojas <b>3. DAN</b></p></li>
+                  <li><MdOutlineSportsMartialArts/><p>Majstorsko zvanje JUDO-a - crni pojas <b>3. DAN</b></p></li>
+                  <li><MdOutlineSportsMartialArts/><p>Majstorsko zvanje JU-JUTSU-a - crni pojas <b>5. DAN</b></p></li>
                 </div>
                 :
                 <></>}
@@ -61,7 +63,7 @@ const Treneri = () => {
               setCard2Full(false)
               setButton1Text("PROČITAJ VIŠE");
               setButton2Text("PROČITAJ VIŠE");
-              window.location.href="/#branislav"
+              window.location.href = "/#branislav"
             } else {
               setCard1Full(true)
               setCard2Full(false)

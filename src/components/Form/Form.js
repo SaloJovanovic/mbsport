@@ -68,7 +68,7 @@ const Form = () => {
         <input
           className={`${styles.chosen_value} ${isFocused ? styles.open : ""}`}
           type="text"
-          required={true}
+          // required={true}
           value={selectedValue}
           placeholder="Izaberi grupaciju"
           onClick={toggleDropdown}
@@ -76,7 +76,7 @@ const Form = () => {
           readOnly
         />
         <ul className={`${styles.value_list} ${isFocused ? styles.open : ""}`}>
-          {["POČETNICI", "TAKMIČARI", "VETERANI"].map((option, index) => (
+          {["POČETNICI", "TAKMIČARI", "REKREATIVCI", "VETERANI"].map((option, index) => (
             <li key={index} onClick={() => handleSelection(option)}>
               {option}
             </li>
@@ -99,7 +99,7 @@ const Form = () => {
           onChange={(e) => setPrezime(e.target.value)}
         />
         <input
-          required={true}
+          // required={true}
           type="text"
           placeholder="Adresa"
           value={adresa}
@@ -107,38 +107,41 @@ const Form = () => {
           onChange={(e) => setAdresa(e.target.value)}
         />
         <input
-          required={true}
+          // required={true}
           type="text"
-          placeholder="Mail"
+          placeholder="E-Mail"
           value={mail}
           name={"mail"}
           onChange={(e) => setMail(e.target.value)}
         />
         {/* Koristi input tipa text za datum */}
+        {/*<input*/}
+        {/*  required={true}*/}
+        {/*  type="text"*/}
+        {/*  id={styles.datum}*/}
+        {/*  name={"datum_rodjenja"}*/}
+        {/*  onChange={handleDateChange}*/}
+        {/*/>*/}
         <input
-          required={true}
-          type="date"
-          id={styles.datum}
-          name={"datum_rodjenja"}
-          onChange={handleDateChange}
-        />
-        <input
-          required={true}
+          // required={true}
           type="text"
-          placeholder="Datum rođenja"
+          placeholder="Godina rođenja"
           value={datumRodjenja} // Prikazujemo formatiran datum
-          readOnly
+          name={"datum_rodjenja"}
+          onChange={(e) => {
+            setDatumRodjenja(e.target.value)
+          }}
         />
         <input
           required={true}
-          placeholder="Broj telefona"
+          placeholder="Kontakt telefon"
           type="tel"
           value={brTelefona}
           name={"broj_telefona"}
           onChange={(e) => setBrTelefona(e.target.value)}
         />
         <input
-          required={true}
+          // required={true}
           placeholder="Da li si ranije trenirao i koji/e sport/ove?"
           type="text"
           value={sportovi}
@@ -146,7 +149,7 @@ const Form = () => {
           onChange={(e) => setSportovi(e.target.value)}
         />
         <input
-          required={true}
+          // required={true}
           placeholder="Koliko dugo si trenirao svaki od sportova?"
           type="text"
           value={duzinaSportovi}
@@ -154,6 +157,7 @@ const Form = () => {
           onChange={(e) => setDuzinaSportovi(e.target.value)}
         />
         <input id={styles.btn} value={"UPIŠI SE"} type={"submit"}/>
+        <p>Klikom na ovo polje automatski će biti poslat vaš zahtev za interesovanje kancelariji kluba koja će vas kontaktirati.</p>
         {
           sent && !error ? <h3 id={styles.success}>Uspešno poslato!</h3> :
             sent && error ? <h3 id={styles.error}>Došlo je do greške...</h3> :

@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.copyright}>
-        <p>&copy; {new Date().getFullYear()} Your Company Name. Sva prava zadržana.</p>
+        <a href={'https://digitalizuj.rs/'}>&copy; {new Date().getFullYear()} Digitalizuj.rs. Sva prava zadržana.</a>
       </div>
     </footer>
   );

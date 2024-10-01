@@ -48,7 +48,7 @@ const Header = () => {
           <a onClick={() => {
             if (menuClicked)
               setMenuClicked(false);
-          }} href={'/bivsi-sportisti'}>BIVŠI SPORTISTI</a>
+          }} href={'/bivsi-sportisti'}>VETERANI BORILAČKIH SPORTOVA</a>
         </li>
         <li>
           <a onClick={() => {
@@ -60,14 +60,14 @@ const Header = () => {
           <a onClick={() => {
             if (menuClicked)
               setMenuClicked(false);
-          }} href={'/mawashi'}>MAWASHI KUP</a>
+          }} href={'/mawashi'} id={styles.changeColor}>MAWASHI KUP</a>
         </li>
-        <li>
-          <a onClick={() => {
-            if (menuClicked)
-              setMenuClicked(false);
-          }} href={'https://www.sportdata.org/karate/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=6254#a_eventhead'}>PRIJAVA ZA TURNIR</a>
-        </li>
+        {/*<li>*/}
+        {/*  <a onClick={() => {*/}
+        {/*    if (menuClicked)*/}
+        {/*      setMenuClicked(false);*/}
+        {/*  }} href={'https://www.sportdata.org/karate/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=6254#a_eventhead'}>PRIJAVA ZA TURNIR</a>*/}
+        {/*</li>*/}
         <li>
           <a className={styles.navbtn} onClick={() => {
             if (menuClicked)
@@ -77,10 +77,10 @@ const Header = () => {
       </ul>
       <ul id={styles.ul2}>
         <li><a href="/">POČETNA</a></li>
-        <li><a href="/bivsi-sportisti">BIVŠI SPORTISTI</a></li>
+        <li><a href="/bivsi-sportisti">VETERANI BORILAČKIH SPORTOVA</a></li>
         <li><a href="/blog">BLOG</a></li>
-        <li><a href="/mawashi">MAWASHI KUP</a></li>
-        <li><a href="https://www.sportdata.org/karate/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=6254#a_eventhead">PRIJAVA ZA TURNIR</a></li>
+        <li><a href="/mawashi" id={styles.changeColor}>MAWASHI KUP</a></li>
+        {/*<li><a href="https://www.sportdata.org/karate/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=6254#a_eventhead">PRIJAVA ZA TURNIR</a></li>*/}
         <li className={styles.navbtn}><a href="/#form">UPIŠI SE</a></li>
       </ul>
     </div>
