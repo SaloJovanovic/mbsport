@@ -3,9 +3,13 @@ import styles from "./Treneri.module.scss"
 import img1 from "../../images/viber_image_2024-09-13_14-03-48-331.jpg";
 import img2 from "../../images/viber_image_2024-09-13_14-03-48-551.jpg";
 import bane from "../../images/bane.jpeg";
+import bane1 from "../../images/11.jpg";
+import bane2 from "../../images/22.jpg";
 import { IoMdSchool } from "react-icons/io";
 import { MdOutlineSportsMartialArts } from "react-icons/md";
 import { FaMedal } from "react-icons/fa6";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/scss/image-gallery.scss";
 
 const Treneri = () => {
 
@@ -16,6 +20,21 @@ const Treneri = () => {
   const[button1Text, setButton1Text] = useState("PROČITAJ VIŠE");
   const[button2Text, setButton2Text] = useState("PROČITAJ VIŠE");
 
+  const baneSlike = [
+    {
+      original: "https://i.ibb.co/X3kMKk4/bane.jpg",
+        thumbnail: "https://i.ibb.co/X3kMKk4/bane.jpg",
+    },
+    {
+      original: "https://i.ibb.co/TT06RJS/11.jpg",
+      thumbnail: "https://i.ibb.co/TT06RJS/11.jpg",
+    },
+    {
+      original: "https://i.ibb.co/1bXPcZC/22.jpg",
+      thumbnail: "https://i.ibb.co/1bXPcZC/22.jpg",
+    },
+  ]
+
   return (
     <div className={styles.container}>
       <h1>UPOZNAJTE <span>NAŠE</span> TRENERE</h1>
@@ -24,7 +43,14 @@ const Treneri = () => {
         <div className={card1Full ? styles.card + " " + styles.full
         : card2Full ? styles.card + " " + styles.min : styles.card} id={styles.card1} id="branislav">
           <div>
-            <img src={bane}/>
+            {/*<img src={bane}/>*/}
+            <div className={styles.gallery}>
+              <ImageGallery items={baneSlike}
+                            showBullets={false}
+                            // showNav={false}
+                            showPlayButton={false}
+                            showFullscreenButton={false}/>
+            </div>
             <h1>BRANISLAV - BANE MILENKOVIĆ</h1>
             <ul>
               <li><IoMdSchool/>Diplomirani profesor sporta i fizičke kulture</li>

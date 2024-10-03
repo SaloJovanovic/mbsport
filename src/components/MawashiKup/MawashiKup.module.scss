@@ -41,6 +41,11 @@
     img {
       width: 90%;
     }
+    .gallery {
+      img {
+        width: 50px !important;
+      }
+    }
     ul {
       display: flex;
       justify-content: center;
