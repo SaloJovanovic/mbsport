@@ -17,6 +17,9 @@ import UnderConstruction from "./components/UnderConstruction/UnderConstruction"
 
 function App() {
   const [loading, setLoading] = useState(false); // Loader je po defaultu false
+  const [visitorCount, setVisitorCount] = useState(
+    parseInt(localStorage.getItem("visitorCount")) || 0
+  );
 
   useEffect(() => {
     // Proveri da li je loader već prikazan tokom sesije
@@ -35,6 +38,18 @@ function App() {
     }
   }, []);
 
+  useEffect(() => {
+    const sessionVisited = sessionStorage.getItem("sessionVisited");
+
+    if (!sessionVisited) {
+      // Povećaj brojač poseta za novu sesiju
+      const newCount = visitorCount + 1;
+      setVisitorCount(newCount);
+      localStorage.setItem("visitorCount", newCount.toString());
+      sessionStorage.setItem("sessionVisited", "true");
+    }
+  }, [visitorCount]);
+
   if (loading) {
     return (
       <div className="loader">
@@ -50,18 +65,21 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
+        <Header/>
         <Routes>
-          <Route path="/" element={<><Landing/><Treneri/><Form/></>} />
-          <Route path="/mawashi" element={<MawashiKupovi />} />
-          <Route path="/mawashi/2023" element={<MawashiKup2023 />} />
-          <Route path="/mawashi/2018" element={<MawashiKup2018 />} />
-          <Route path="/mawashi/2017" element={<MawashiKup2017 />} />
-          <Route path="/mawashi/2015" element={<MawashiKup2015 />} />
-          <Route path="/bivsi-sportisti" element={<UnderConstruction />} />
-          <Route path="/blog" element={<UnderConstruction />} />
+          <Route path="/" element={<><Landing/><Treneri/><Form/></>}/>
+          <Route path="/mawashi" element={<MawashiKupovi/>}/>
+          <Route path="/mawashi/2023" element={<MawashiKup2023/>}/>
+          <Route path="/mawashi/2018" element={<MawashiKup2018/>}/>
+          <Route path="/mawashi/2017" element={<MawashiKup2017/>}/>
+          <Route path="/mawashi/2015" element={<MawashiKup2015/>}/>
+          <Route path="/bivsi-sportisti" element={<UnderConstruction/>}/>
+          <Route path="/blog" element={<UnderConstruction/>}/>
         </Routes>
-         <Footer />
+        <Footer/>
+        <div className="visitor-count">
+          <p>Broj posetilaca sajta: {visitorCount}</p>
+        </div>
       </BrowserRouter>
     </div>
   );

@@ -26,6 +26,9 @@
     li {
       margin: 0 10px;
       list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       a {
         z-index: 100;
         color: whitesmoke;
@@ -35,6 +38,9 @@
         background: #2c3e98;
         padding: 10px 20px;
         border-radius: 16px;
+      }
+      img {
+        width: 25px;
       }
     }
     .navbtn {
@@ -138,6 +144,9 @@
         #changeColor {
           color: whitesmoke;
           border-radius: 0;
+          padding: 30px 0;
+        }
+        img {
           padding: 30px 0;
         }
       }

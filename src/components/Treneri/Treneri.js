@@ -49,7 +49,8 @@ const Treneri = () => {
                             showBullets={false}
                             // showNav={false}
                             showPlayButton={false}
-                            showFullscreenButton={false}/>
+                            showFullscreenButton={false}
+                            showThumbnails={false}/>
             </div>
             <h1>BRANISLAV - BANE MILENKOVIĆ</h1>
             <ul>
@@ -83,7 +84,7 @@ const Treneri = () => {
                 <></>}
             </ul>
           </div>
-          <button onClick={(e) => {
+          <button className={styles.readMore} onClick={(e) => {
             if (card1Full) {
               setCard1Full(false)
               setCard2Full(false)
@@ -122,7 +123,7 @@ const Treneri = () => {
                 <></>}
             </ul>
           </div>
-          <button onClick={(e) => {
+          <button className={styles.readMore} onClick={(e) => {
             if (card2Full) {
               setCard2Full(false)
               setCard1Full(false)

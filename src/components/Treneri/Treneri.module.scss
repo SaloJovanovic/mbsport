@@ -60,6 +60,12 @@
         margin-bottom: 10px;
       }
 
+      .gallery {
+        img {
+          width: 100% !important;
+        }
+      }
+
       ul {
         text-align: start;
         li {
@@ -88,7 +94,7 @@
         transition: all 300ms ease;
       }
 
-      button {
+      .readMore {
         border: none;
         outline: none;
         padding: 10px 20px;

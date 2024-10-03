@@ -1,0 +1,14 @@
+{
+  "header": {
+    "pocetna": "HOME",
+    "veterani": "VETERANS",
+    "blog": "BLOG",
+    "mawashi": "MAWASHI CUP",
+    "upis": "SIGN UP"
+  },
+  "landing": {
+    "poruka": "Registration is free until the number of members of the beginner groups by age is filled!",
+    "naslov": "The power of martial arts\nin your body and mind!",
+    "upis": "SIGN UP"
+  }
+}
