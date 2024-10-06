@@ -77,9 +77,9 @@ function App() {
           <Route path="/blog" element={<UnderConstruction/>}/>
         </Routes>
         <Footer/>
-        <div className="visitor-count">
-          <p>Broj posetilaca sajta: {visitorCount}</p>
-        </div>
+        {/*<div className="visitor-count">*/}
+        {/*  <p>Broj posetilaca sajta: {visitorCount}</p>*/}
+        {/*</div>*/}
       </BrowserRouter>
     </div>
   );

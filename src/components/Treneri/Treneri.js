@@ -10,6 +10,7 @@ import { MdOutlineSportsMartialArts } from "react-icons/md";
 import { FaMedal } from "react-icons/fa6";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/scss/image-gallery.scss";
+import {useTranslation} from "react-i18next";
 
 const Treneri = () => {
 
@@ -35,9 +36,11 @@ const Treneri = () => {
     },
   ]
 
+  const { t } = useTranslation(); // Koristi useTranslation hook
+
   return (
     <div className={styles.container}>
-      <h1>UPOZNAJTE <span>NAŠE</span> TRENERE</h1>
+      <h1>{t("treneri.naslov1")} <span>{t("treneri.naslov2")}</span> {t("treneri.naslov3")}</h1>
       {/*<p>KROZ DISCIPLINU DOLAZI SLOBODA</p>*/}
       <div className={styles. cards}>
         <div className={card1Full ? styles.card + " " + styles.full
@@ -52,33 +55,26 @@ const Treneri = () => {
                             showFullscreenButton={false}
                             showThumbnails={false}/>
             </div>
-            <h1>BRANISLAV - BANE MILENKOVIĆ</h1>
+            <h1>{t("treneri.baneImePrezime")}</h1>
             <ul>
-              <li><IoMdSchool/>Diplomirani profesor sporta i fizičke kulture</li>
-              <li><IoMdSchool/>Trenerska licenca od 1996. godine u kontinuitetu</li>
-              <li><IoMdSchool/>Trenerska licenca od 1996. godine u kontinuitetu</li>
-              <li><IoMdSchool/>Internacionalni sudija u Karate sportu</li>
-              <li><IoMdSchool/>Aktivni član Nadzornog odbora BKS-a (Beogradskog karate saveza)</li>
-              <li><IoMdSchool/>Redovan član Edukativne komisije Sportskog saveza Zvezdara</li>
+              <li><IoMdSchool/>{t("treneri.bane1")}</li>
+              <li><IoMdSchool/>{t("treneri.bane2")}</li>
+              <li><IoMdSchool/>{t("treneri.bane3")}</li>
+              <li><IoMdSchool/>{t("treneri.bane4")}</li>
+              <li><IoMdSchool/>{t("treneri.bane5")}</li>
               {card1Full ?
                 <div className={styles.additional}>
-                  <li><IoMdSchool/>Medijator sa licencom Ministarstva pravosuđa za rešavanje sudskih sporova mirnim
-                    putem
-                  </li>
-                  <li><IoMdSchool/>Sportska akademija Beograd (2004-2006)</li>
-                  <li><IoMdSchool/>Fakultet sporta i turizma Novi Sad (2008-2012)</li>
-                  <li><IoMdSchool/>Fakultet sportskih nauka (pedagoško-nastavni smer, 2014-2018)</li>
-                  <li><IoMdSchool/>Diplomirani instruktor japanske JU-JUTSU veštine - Faukltet sporta Novi Sad</li>
-                  <li><IoMdSchool/>Stekao licencu WFK (Svetske karate federacije)</li>
-                  <li><IoMdSchool/>Vojna akademija vojske Srbije - instruktor borilačkih sekcija KARATE, JU-JUTSU i
-                    SAMOODBRANA (2012-2019).
-                  </li>
-                  <li><IoMdSchool/>Jedan od rukovodilaca-instruktora internacionalnog kampa borilačkih veština vojnih
-                    specijalnih jedinica Vojske Srbije (Kopaonik 2014.)
-                  </li>
-                  <li><MdOutlineSportsMartialArts/><p>Majstorsko zvanje KARATE-a - crni pojas <b>3. DAN</b></p></li>
-                  <li><MdOutlineSportsMartialArts/><p>Majstorsko zvanje JUDO-a - crni pojas <b>3. DAN</b></p></li>
-                  <li><MdOutlineSportsMartialArts/><p>Majstorsko zvanje JU-JUTSU-a - crni pojas <b>5. DAN</b></p></li>
+                  <li><IoMdSchool/>{t("treneri.bane6")}</li>
+                  <li><IoMdSchool/>{t("treneri.bane7")}</li>
+                  <li><IoMdSchool/>{t("treneri.bane8")}</li>
+                  <li><IoMdSchool/>{t("treneri.bane9")}</li>
+                  <li><IoMdSchool/>{t("treneri.bane10")}</li>
+                  <li><IoMdSchool/>{t("treneri.bane11")}</li>
+                  <li><IoMdSchool/>{t("treneri.bane12")}</li>
+                  <li><IoMdSchool/>{t("treneri.bane13")}</li>
+                  <li><MdOutlineSportsMartialArts/><p>{t("treneri.bane14")} <b>3. DAN</b></p></li>
+                  <li><MdOutlineSportsMartialArts/><p>{t("treneri.bane15")} <b>3. DAN</b></p></li>
+                  <li><MdOutlineSportsMartialArts/><p>{t("treneri.bane16")} <b>5. DAN</b></p></li>
                 </div>
                 :
                 <></>}
@@ -88,15 +84,15 @@ const Treneri = () => {
             if (card1Full) {
               setCard1Full(false)
               setCard2Full(false)
-              setButton1Text("PROČITAJ VIŠE");
-              setButton2Text("PROČITAJ VIŠE");
+              setButton1Text(t("treneri.procitajVise"));
+              setButton2Text(t("treneri.procitajManje"));
               window.location.href = "/#branislav"
             } else {
               setCard1Full(true)
               setCard2Full(false)
-              setButton1Text("PROČITAJ MANJE");
-              setButton2Text("PROČITAJ VIŠE");
-              window.location.href="/#branislav"
+              setButton2Text(t("treneri.procitajManje"));
+              setButton1Text(t("treneri.procitajVise"));
+              window.location.href = "/#branislav"
             }
           }}>{button1Text}</button>
         </div>
@@ -104,37 +100,37 @@ const Treneri = () => {
           : card1Full ? styles.card + " " + styles.min : styles.card} id={styles.card2} id={"danijela"}>
           <div>
             <img src={img2}/>
-            <h1>DANIJELA ANDRIJAŠEVIĆ ex MILENKOVIĆ</h1>
+            <h1>{t("treneri.danijelaImePrezime")}</h1>
             <ul>
-              <li><IoMdSchool/>Diplomirani pravnik - advokat</li>
-              <li><IoMdSchool/>Licencirani trener KFS (Karate federacija Srbije)</li>
-              <li><IoMdSchool/>Diploma operativnog trenera karatea</li>
+              <li><IoMdSchool/>{t("treneri.danijela1")}</li>
+              <li><IoMdSchool/>{t("treneri.danijela2")}</li>
+              <li><IoMdSchool/>{t("treneri.danijela3")}</li>
               {card2Full ?
                 <div className={styles.additional}>
-                  <li><MdOutlineSportsMartialArts/><p>Majstorsko zvanje KARATE-a - crni pojas <b>1. DAN</b></p></li>
-                  <li><FaMedal/>Osvajač mnogih internacionalnih medalja, Učesnik 4 svetskih i 8 evropskih šampionata.
-                  </li>
-                  <li><FaMedal/>Bronzana medalja - borbe pojedinačno - Evropsko prvenstvo, Pariz 2009.</li>
-                  <li><FaMedal/>Srebrna medalja - regionalno ekpino prvenstvno Evrope, Ankara 2014.</li>
-                  <li><FaMedal/>Bronzana medalja - borbe ekipno - svetsko univerzitetsko prvenstvo u Crnoj Gori, Bar 2012.</li>
-                  <li><FaMedal/>Srebrna medalja - borbe pojedinačno - prvenstvo Mediterana</li>
+                  <li><MdOutlineSportsMartialArts/><p>{t("treneri.danijela4")} <b>1. DAN</b></p></li>
+                  <li><FaMedal/>{t("treneri.danijela5")}</li>
+                  <li><FaMedal/>{t("treneri.danijela6")}</li>
+                  <li><FaMedal/>{t("treneri.danijela7")}</li>
+                  <li><FaMedal/>{t("treneri.danijela8")}</li>
+                  <li><FaMedal/>{t("treneri.danijela9")}</li>
                 </div>
                 :
                 <></>}
             </ul>
+
           </div>
           <button className={styles.readMore} onClick={(e) => {
             if (card2Full) {
               setCard2Full(false)
               setCard1Full(false)
-              setButton2Text("PROČITAJ VIŠE");
-              setButton1Text("PROČITAJ VIŠE");
+              setButton1Text(t("treneri.procitajVise"));
+              setButton2Text(t("treneri.procitajManje"));
               window.location.href = "/#danijela";
             } else {
               setCard2Full(true)
               setCard1Full(false)
-              setButton2Text("PROČITAJ MANJE");
-              setButton1Text("PROČITAJ VIŠE");
+              setButton2Text(t("treneri.procitajManje"));
+              setButton1Text(t("treneri.procitajVise"));
               window.location.href = "/#danijela";
             }
           }}>{button2Text}</button>

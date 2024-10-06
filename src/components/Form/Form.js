@@ -1,6 +1,7 @@
 import React, {useRef, useState} from "react";
 import styles from "./Form.module.scss";
 import emailjs from '@emailjs/browser';
+import {useTranslation} from "react-i18next";
 
 const Form = () => {
   const [isFocused, setIsFocused] = useState(false);
@@ -61,22 +62,24 @@ const Form = () => {
       );
   };
 
+  const { t } = useTranslation(); // Koristi useTranslation hook
+
   return (
     <div id={"form"} className={styles.container}>
-      <h1>Upiši se <span>besplatno</span> do kraja septembra!</h1>
+      <h1>{t("forma.naslov1")} <span>{t("forma.naslov2")}</span></h1>
       <form ref={form} onSubmit={sendEmail}>
         <input
           className={`${styles.chosen_value} ${isFocused ? styles.open : ""}`}
           type="text"
           // required={true}
           value={selectedValue}
-          placeholder="Izaberi grupaciju"
+          placeholder={t("forma.grupacija")}
           onClick={toggleDropdown}
           name="grupacija"
           readOnly
         />
         <ul className={`${styles.value_list} ${isFocused ? styles.open : ""}`}>
-          {["POČETNICI", "TAKMIČARI", "REKREATIVCI", "VETERANI"].map((option, index) => (
+          {[t("forma.pocetnici"), t("forma.takmicari"), t("forma.rekreativci"), t("forma.veterani")].map((option, index) => (
             <li key={index} onClick={() => handleSelection(option)}>
               {option}
             </li>
@@ -85,7 +88,7 @@ const Form = () => {
         <input
           required={true}
           type="text"
-          placeholder="Ime"
+          placeholder={t("forma.ime")}
           value={ime}
           name={"ime"}
           onChange={(e) => setIme(e.target.value)}
@@ -93,77 +96,62 @@ const Form = () => {
         <input
           required={true}
           type="text"
-          placeholder="Prezime"
+          placeholder={t("forma.prezime")}
           value={prezime}
           name={"prezime"}
           onChange={(e) => setPrezime(e.target.value)}
         />
         <input
-          // required={true}
           type="text"
-          placeholder="Adresa"
+          placeholder={t("forma.adresa")}
           value={adresa}
           name={"adresa"}
           onChange={(e) => setAdresa(e.target.value)}
         />
         <input
-          // required={true}
           type="text"
-          placeholder="E-Mail"
+          placeholder={t("forma.email")}
           value={mail}
           name={"mail"}
           onChange={(e) => setMail(e.target.value)}
         />
-        {/* Koristi input tipa text za datum */}
-        {/*<input*/}
-        {/*  required={true}*/}
-        {/*  type="text"*/}
-        {/*  id={styles.datum}*/}
-        {/*  name={"datum_rodjenja"}*/}
-        {/*  onChange={handleDateChange}*/}
-        {/*/>*/}
         <input
-          // required={true}
           type="text"
-          placeholder="Godina rođenja"
-          value={datumRodjenja} // Prikazujemo formatiran datum
+          placeholder={t("forma.godinaRodjenja")}
+          value={datumRodjenja}
           name={"datum_rodjenja"}
-          onChange={(e) => {
-            setDatumRodjenja(e.target.value)
-          }}
+          onChange={(e) => setDatumRodjenja(e.target.value)}
         />
         <input
           required={true}
-          placeholder="Kontakt telefon"
+          placeholder={t("forma.telefon")}
           type="tel"
           value={brTelefona}
           name={"broj_telefona"}
           onChange={(e) => setBrTelefona(e.target.value)}
         />
         <input
-          // required={true}
-          placeholder="Da li si ranije trenirao i koji/e sport/ove?"
           type="text"
+          placeholder={t("forma.sportovi")}
           value={sportovi}
           name={"sportovi"}
           onChange={(e) => setSportovi(e.target.value)}
         />
         <input
-          // required={true}
-          placeholder="Koliko dugo si trenirao svaki od sportova?"
           type="text"
+          placeholder={t("forma.dugo")}
           value={duzinaSportovi}
           name={"duzina"}
           onChange={(e) => setDuzinaSportovi(e.target.value)}
         />
-        <input id={styles.btn} value={"UPIŠI SE"} type={"submit"}/>
-        <p>Klikom na ovo polje automatski će biti poslat vaš zahtev za interesovanje kancelariji kluba koja će vas kontaktirati.</p>
+        <input id={styles.btn} value={t("forma.upisiSe")} type={"submit"}/>
+        <p>{t("forma.info")}</p>
         {
           sent && !error ? <h3 id={styles.success}>Uspešno poslato!</h3> :
             sent && error ? <h3 id={styles.error}>Došlo je do greške...</h3> :
               <></>
         }
-          </form>
+      </form>
     </div>
   );
 };
