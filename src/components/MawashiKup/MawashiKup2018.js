@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./MawashiKup.module.scss";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/scss/image-gallery.scss";
+import {useTranslation} from "react-i18next";
 
 const MawashiKup2018 = () => {
 
@@ -613,33 +614,38 @@ const MawashiKup2018 = () => {
     },
   ]
 
+  const { t } = useTranslation(); // Koristi useTranslation hook
+
   return (
     <div className={styles.container}>
       <div className={styles.naslov}>
         <div>
-          <h1>MB MAWASHI KUP 2018</h1>
-          <p>MB MAWASHI KUP postoji već 15 godina (2009 - sada)</p>
+          <h1>{t("mawashi2018.naslov")}</h1>
+          <p>{t("mawashi2018.podnaslov")}</p>
         </div>
       </div>
       <div className={styles.content}>
-        <h1>10. MB MAWASHI KUP</h1>
+        <h1>{t("mawashi2018.naslovKup")}</h1>
         <p>
-          U nedelju 18.02.2018. godine u organizaciji Karate kluba ,, MB Sport ,, iz Beograda u Hali sportova ,, Ranko Žeravica ,, na Novom Beogradu održan je jubilarni ,, <b>10.MB – MAWASHI KUP</b> ,,. U ovoj tradicionalnoj internacionalnoj sportskoj manifestaciji učestvovali su karatisti iz : Sarajeva, Doboja, Tuzle, Zagreba , Budve , Lazarevca, Čačka, Gornjeg Milanovca, Paraćina, Aranđelovca, Kovačice, Raške, Obrenovca , Ripnja, Surčina, Valjeva, i Beograda! U konkurenciji <b>49 klubova</b> zabeleženo je preko 330 takmičarskih nastupa.
+          {t("mawashi2018.opis1")}
           <br/><br/>
-          Turniru je prethodilo seniorsko prvenstvo Beograda takođe u organizaciji Karate kluba ,, MB Sport ,, iz Beograda
+          {t("mawashi2018.opis2")}
         </p>
         <ul>
-          <li><a href={'https://www.mb-sportklub.com/wp-content/uploads/2018/02/MB-Kompletni-izvestaj.pdf'}>Izveštaj
-            – Mawashi Kup 2018</a></li>
+          <li>
+            <a href={'https://www.mb-sportklub.com/wp-content/uploads/2018/02/MB-Kompletni-izvestaj.pdf'}>
+              {t("mawashi2018.link1")}
+            </a>
+          </li>
         </ul>
-        <p>Izvandrednu atmosferu sa turnira možete pogledati na slikama ispod.</p>
-        <ImageGallery items={revijalni}/>
-        <ImageGallery items={borbe}/>
-        <ImageGallery items={kate}/>
-        <ImageGallery items={baneIKlubovi}/>
+        <p>{t("mawashi2018.atmosfera")}</p>
+        <ImageGallery items={revijalni} />
+        <ImageGallery items={borbe} />
+        <ImageGallery items={kate} />
+        <ImageGallery items={baneIKlubovi} />
       </div>
     </div>
-  )
+  );
 }
 
 export default MawashiKup2018;

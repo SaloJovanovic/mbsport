@@ -3,6 +3,7 @@
     "pocetna": "HOME",
     "veterani": "VETERANS",
     "blog": "BLOG",
+    "kontakt": "CONTACT",
     "mawashi": "MAWASHI CUP",
     "upis": "SIGN UP"
   },
@@ -69,5 +70,64 @@
     "veterani": "Veterans",
     "blog": "Blog",
     "copyright": "Digitalizuj.rs. All rights reserved."
+  },
+  "mawashi": {
+    "naslov": "MB MAWASHI CUP 2023",
+    "podnaslov": "MB MAWASHI CUP has existed for 15 years (2009 - present)",
+    "naslovKup": "14th MB MAWASHI CUP",
+    "opis1": "The 14th MB MAWASHI CUP and 12th MB INTERNATIONAL VETERAN CUP, A-series tournament, was held on February 18, 2023...",
+    "opis2": "In the general classification, the most successful clubs were: (1) Ulcinj, (2) Spartanci 026, and (3) Pobednik 011, in kata...",
+    "opis3": "The most attractive fighters were Bogdan Milenković and Katarina Đukić...",
+    "opis4": "The complete report can be downloaded at the links below:",
+    "link1": "Report – Mawashi Cup 2023",
+    "link2": "Results – MB Mawashi Cup 2023",
+    "link3": "Medal tally – MB Mawashi Cup 2023",
+    "link4": "Participating clubs – Mawashi Cup 2023",
+    "link5": "Number of registered competitors and teams – MB Mawashi Cup 2023",
+    "link6": "Draw – MB Mawashi Cup 2023",
+    "link7": "International veteran cup draw – MB Mawashi Cup 2023",
+    "link8": "Competition plan – MB Mawashi Cup 2023",
+    "atmosfera": "You can view the outstanding atmosphere from the tournament in the images below.",
+    "pripreme": "Preparations and tournament opening",
+    "kate": "Kata competition",
+    "borbe": "Fight competition",
+    "najatraktivniji": "Most attractive competitors",
+    "najmladji": "Youngest and cutest competitors",
+    "veterani": "Veterans",
+    "klubovi": "Clubs",
+    "mbSport": "MB Sport",
+    "imgAlt": "MB Sport image",
+    "opsteInfo": "General information",
+    "imgAlt2": "General information image",
+    "obaveze": "Competitor obligations",
+    "imgAlt3": "Obligations image",
+    "discipline": "Disciplines and categories",
+    "imgAlt4": "Disciplines image"
+  },
+  "mawashi2018": {
+    "naslov": "MB MAWASHI CUP 2018",
+    "podnaslov": "MB MAWASHI CUP has been held for 15 years (2009 - present)",
+    "naslovKup": "10th MB MAWASHI CUP",
+    "opis1": "On Sunday, February 18th, 2018, the jubilee 10th MB – MAWASHI CUP was held, organized by the Karate Club \"MB Sport\" from Belgrade in the Sports Hall \"Ranko Žeravica\" in New Belgrade. In this traditional international sports event, karate practitioners from Sarajevo, Doboj, Tuzla, Zagreb, Budva, Lazarevac, Čačak, Gornji Milanovac, Paraćin, Aranđelovac, Kovačica, Raška, Obrenovac, Ripanj, Surčin, Valjevo, and Belgrade participated! Over 330 competitive performances were recorded in competition with 49 clubs.",
+    "opis2": "The tournament was preceded by the senior championship of Belgrade, also organized by the Karate Club \"MB Sport\" from Belgrade.",
+    "link1": "Report – Mawashi Cup 2018",
+    "atmosfera": "You can view the exceptional atmosphere from the tournament in the images below."
+  },
+  "mawashi2017": {
+    "naslov": "MB MAWASHI CUP 2017",
+    "podnaslov": "MB MAWASHI CUP has been held for 15 years (2009 - present)",
+    "naslovKup": "9th MB MAWASHI CUP",
+    "opis1": "On Sunday, March 12th, 2017, the 9th MB – MAWASHI CUP was held, organized by the Karate Club \"MB Sport\" from Belgrade in the Sports Hall \"Ranko Žeravica\" in New Belgrade. Karate practitioners from Sarajevo, Trebinje, Zagreb, Budva, Velenje, Timișoara, Lazarevac, Čačak, Paraćin, Ripanj, Surčin, Valjevo, Velika Gradiška, Šabac, and Belgrade participated in this traditional international sports event! Over 400 competitive performances were recorded in competition with 47 clubs.",
+    "link1": "Report – Mawashi Cup 2017",
+    "atmosfera": "You can view the exceptional atmosphere from the tournament in the images below."
+  },
+  "mawashi2015": {
+    "naslov": "MB MAWASHI CUP 2015",
+    "podnaslov": "MB MAWASHI CUP has been held for 15 years (2009 - present)",
+    "naslovKup": "7th MB MAWASHI CUP",
+    "opis1": "On Sunday, March 15th, 2015, another MB-MAWASHI CUP was held. Over 40 clubs from surrounding regions participated – Montenegro, Bosnia, Republika Srpska, regions of Central Serbia, and of course, the largest number of competitors from Belgrade clubs. The youngest competitor at the tournament was Vukašin Anđelić, born June 8th, 2010, a member of the MB SPORT karate club.",
+    "link1": "Report – Mawashi Cup 2015",
+    "link2": "List of clubs – Mawashi Cup 2015",
+    "link3": "Attendance – Mawashi Cup 2015"
   }
 }

@@ -1,0 +1,29 @@
+.contactContainer {
+  padding: 2rem;
+  padding-top: 150px;
+  min-height: calc(100vh - 303px - 115px);
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .contactInfo {
+    margin-bottom: 2rem;
+    p {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+      b {
+        color: #333;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+    }
+  }
+  .mapContainer {
+    iframe {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./MawashiKup.module.scss";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/scss/image-gallery.scss";
+import {useTranslation} from "react-i18next";
 
 const MawashiKup2017 = () => {
 
@@ -350,30 +351,33 @@ const MawashiKup2017 = () => {
     },
   ]
 
+  const { t } = useTranslation(); // Koristi useTranslation hook
+
   return (
     <div className={styles.container}>
       <div className={styles.naslov}>
         <div>
-          <h1>MB MAWASHI KUP 2017</h1>
-          <p>MB MAWASHI KUP postoji već 15 godina (2009 - sada)</p>
+          <h1>{t("mawashi2017.naslov")}</h1>
+          <p>{t("mawashi2017.podnaslov")}</p>
         </div>
       </div>
       <div className={styles.content}>
-        <h1>9. MB MAWASHI KUP</h1>
-        <p>
-          U nedelju 12.03.2017. godine u organizaciji Karate kluba ,, MB Sport ,, iz Beograda u Hali sportova ,, Ranko Žeravica ,, na Novom Beogradu održan je ,, <b>9.MB – MAWASHI KUP</b> ,, U ovoj tradicionalnoj internacionalnoj sportskoj manifestaciji učestvovali su karatisti iz : Sarajeva, Trebinja, Zagreba , Budve , Velenja, Temišvara, Lazarevca, Čačka ,Paraćina , Ripnja, Surčina, Valjeva, Velike Gradiške, Šapca i Beograda! U konkurenciji <b>47</b> klubova zabeleženo je preko 400 takmičarskih nastupa.
-        </p>
+        <h1>{t("mawashi2017.naslovKup")}</h1>
+        <p>{t("mawashi2017.opis1")}</p>
         <ul>
-          <li><a href={'https://www.mb-sportklub.com/wp-content/uploads/2017/03/MB-Izvestaj-2017.pdf'}>Izveštaj
-            – Mawashi Kup 2017</a></li>
+          <li>
+            <a href={'https://www.mb-sportklub.com/wp-content/uploads/2017/03/MB-Izvestaj-2017.pdf'}>
+              {t("mawashi2017.link1")}
+            </a>
+          </li>
         </ul>
-        <p>Izvandrednu atmosferu sa turnira možete pogledati na slikama ispod.</p>
-        <ImageGallery items={prvi}/>
-        <ImageGallery items={drugi}/>
-        <ImageGallery items={treci}/>
+        <p>{t("mawashi2017.atmosfera")}</p>
+        <ImageGallery items={prvi} />
+        <ImageGallery items={drugi} />
+        <ImageGallery items={treci} />
       </div>
     </div>
-  )
+  );
 }
 
 export default MawashiKup2017;

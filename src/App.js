@@ -14,6 +14,8 @@ import MawashiKup2015 from "./components/MawashiKup/MawashiKup2015";
 import { useEffect, useState } from "react";
 import videoLoader from "./images/JudoSuit.mp4";
 import UnderConstruction from "./components/UnderConstruction/UnderConstruction";
+import Samoodbrana from "./components/Samoodbrana/Samoodbrana";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const [loading, setLoading] = useState(false); // Loader je po defaultu false
@@ -67,7 +69,7 @@ function App() {
       <BrowserRouter>
         <Header/>
         <Routes>
-          <Route path="/" element={<><Landing/><Treneri/><Form/></>}/>
+          <Route path="/" element={<><Landing/><Treneri/><Samoodbrana/><Form/></>}/>
           <Route path="/mawashi" element={<MawashiKupovi/>}/>
           <Route path="/mawashi/2023" element={<MawashiKup2023/>}/>
           <Route path="/mawashi/2018" element={<MawashiKup2018/>}/>
@@ -75,6 +77,8 @@ function App() {
           <Route path="/mawashi/2015" element={<MawashiKup2015/>}/>
           <Route path="/bivsi-sportisti" element={<UnderConstruction/>}/>
           <Route path="/blog" element={<UnderConstruction/>}/>
+          <Route path="/izrada" element={<UnderConstruction/>}/>
+          <Route path="/kontakt" element={<Contact/>}/>
         </Routes>
         <Footer/>
         {/*<div className="visitor-count">*/}

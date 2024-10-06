@@ -128,7 +128,7 @@
     transition: .3s ease-in-out;
 
     &.open {
-      max-height: 420px;
+      max-height: calc(420px + 96px);
       overflow: auto;
     }
 

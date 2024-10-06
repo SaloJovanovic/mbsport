@@ -1,0 +1,27 @@
+.container {
+  font-family: "Jost", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  padding-top: 100px;
+
+  h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+
+  div {
+    max-width: 900px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+}

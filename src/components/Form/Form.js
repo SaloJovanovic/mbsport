@@ -2,6 +2,8 @@ import React, {useRef, useState} from "react";
 import styles from "./Form.module.scss";
 import emailjs from '@emailjs/browser';
 import {useTranslation} from "react-i18next";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/scss/image-gallery.scss";
 
 const Form = () => {
   const [isFocused, setIsFocused] = useState(false);
@@ -18,6 +20,12 @@ const Form = () => {
   const toggleDropdown = () => {
     setIsFocused((prev) => !prev);
   };
+
+  /*
+  <a href="https://ibb.co/JChFSfn"><img src="https://i.ibb.co/GFh3rK7/BOLE-SHPAGA-NA-STOLICAMA.jpg" alt="BOLE-SHPAGA-NA-STOLICAMA" border="0"></a>
+<a href="https://ibb.co/Jd9sXMb"><img src="https://i.ibb.co/th9JyWN/BOLE-MAWASHI-NA-KRUSKU.jpg" alt="BOLE-MAWASHI-NA-KRUSKU" border="0"></a>
+<a href="https://ibb.co/84RsYjG"><img src="https://i.ibb.co/QjqQD6h/BOGDAN-SA-PEHAROM-IMG-2425.jpg" alt="BOGDAN-SA-PEHAROM-IMG-2425" border="0"></a>
+   */
 
   const handleSelection = (value) => {
     setSelectedValue(value);
@@ -64,6 +72,21 @@ const Form = () => {
 
   const { t } = useTranslation(); // Koristi useTranslation hook
 
+  const pocetniciSlike = [
+    {
+      original: "https://i.ibb.co/GFh3rK7/BOLE-SHPAGA-NA-STOLICAMA.jpg",
+      thumbnail: "https://i.ibb.co/GFh3rK7/BOLE-SHPAGA-NA-STOLICAMA.jpg",
+    },
+    {
+      original: "https://i.ibb.co/th9JyWN/BOLE-MAWASHI-NA-KRUSKU.jpg",
+      thumbnail: "https://i.ibb.co/th9JyWN/BOLE-MAWASHI-NA-KRUSKU.jpg",
+    },
+    {
+      original: "https://i.ibb.co/QjqQD6h/BOGDAN-SA-PEHAROM-IMG-2425.jpg",
+      thumbnail: "https://i.ibb.co/QjqQD6h/BOGDAN-SA-PEHAROM-IMG-2425.jpg",
+    }
+  ]
+
   return (
     <div id={"form"} className={styles.container}>
       <h1>{t("forma.naslov1")} <span>{t("forma.naslov2")}</span></h1>
@@ -79,12 +102,21 @@ const Form = () => {
           readOnly
         />
         <ul className={`${styles.value_list} ${isFocused ? styles.open : ""}`}>
-          {[t("forma.pocetnici"), t("forma.takmicari"), t("forma.rekreativci"), t("forma.veterani")].map((option, index) => (
+          {[t("forma.pocetnici"), t("forma.veteraniPocetnici"), t("forma.takmicari"), t("forma.rekreativci"), t("forma.veterani")].map((option, index) => (
             <li key={index} onClick={() => handleSelection(option)}>
               {option}
             </li>
           ))}
         </ul>
+        {
+          selectedValue === "POČETNICI" ? <div>
+            <p>Predskolski uzrast</p>
+            <p>Skolski uzrast</p>
+            <p>Srednjoskolski uzrast</p>
+            <p>Starija grupa</p>
+            <ImageGallery items={pocetniciSlike}/>
+          </div> : <></>
+        }
         <input
           required={true}
           type="text"

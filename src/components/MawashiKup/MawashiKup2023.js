@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./MawashiKup.module.scss";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/scss/image-gallery.scss";
+import {useTranslation} from "react-i18next";
 
 const MawashiKup2023 = () => {
 
@@ -837,87 +838,67 @@ const MawashiKup2023 = () => {
     },
   ]
 
+  const { t } = useTranslation(); // Koristi useTranslation hook
+
   return (
     <div className={styles.container}>
       <div className={styles.naslov}>
         <div>
-          <h1>MB MAWASHI KUP 2023</h1>
-          <p>MB MAWASHI KUP postoji već 15 godina (2009 - sada)</p>
+          <h1>{t("mawashi.naslov")}</h1>
+          <p>{t("mawashi.podnaslov")}</p>
         </div>
       </div>
       <div className={styles.content}>
-        <h1>14. MB MAWASHI KUP</h1>
+        <h1>{t("mawashi.naslovKup")}</h1>
         <p>
-          14. MB MAWASHI KUP i 12. MB INTERNACIONALNI KUP VETERANA, turnir A serije, održan je 18.02.2023. godine u Hali
-          sportova “Ranko Žeravica” u organizaciji MB Sport kluba a suorganizator je bio Beogradski karate savez na kome
-          je izvedeno više od 600 nastupa iz 73 kluba iz Belgije, Bosne i Hercegovine, Bugarske. Crne Gore, Grčke,
-          Hrvatske, Severne Makedonije, Slovenije, Turske i Srbije.
+          {t("mawashi.opis1")}
           <br/><br/>
-          U generalnom plasmanu najuspešniji klubovi su bili: (1) Ulcinj, (2) Spartanci 026 i (3) Pobednik 011, u
-          katama:
-          (1) Ulcinj, (2) Vazduhoplovac i (3) Spartanci 026 i u borbama: (1) Omladinac iz Podgorice, (2) Parastatidis iz
-          Grčke i (3) Gorštak iz Kolašina.
+          {t("mawashi.opis2")}
           <br/><br/>
-          Za najatraktivnije borce su proglašeni Bogdan Milenković (MB Sport) i Katarina Đukić (Gorštak iz Kolašina) a
-          za
-          najmlađe takmičare: Luka Jovanović, rođen 08.09. 2017. (MB Sport) i Nikolina Ivković (Unsu iz Bjeljine).
+          {t("mawashi.opis3")}
           <br/><br/>
-          Kompletan izveštaj možete preuzeti na linkovima ispod:
+          {t("mawashi.opis4")}
         </p>
         <ul>
-          <li><a href={'https://www.mb-sportklub.com/wp-content/uploads/2023/02/Izvestaj-Mawashi-Kup-2023.pdf'}>Izveštaj
-            – Mawashi Kup 2023</a></li>
-          <li><a href={'https://www.mb-sportklub.com/wp-content/uploads/2023/02/Rezultati-MB-Mawashi-Kup-2023.pdf'}>Rezultati
-            – MB Mawashi Kup 2023</a></li>
-          <li><a
-            href={'https://www.mb-sportklub.com/wp-content/uploads/2023/02/Bilans-medalja-MB-Mawashi-Kup-2023.pdf'}>Bilans
-            medalja – MB Mawashi Kup 2023</a></li>
-          <li><a href={'https://www.mb-sportklub.com/wp-content/uploads/2023/02/Klubovi-ucesnici-Mawashi-Kup-2023.pdf'}>Klubovi
-            učesnici – Mawashi Kup 2023</a></li>
-          <li><a
-            href={'https://www.mb-sportklub.com/wp-content/uploads/2023/02/Broj-prijavljenih-takmicara-i-ekipa-MB-Mawashi-Kup-2023.pdf'}>Broj
-            prijavljenih takmičara i ekipa – MB Mawashi Kup 2023</a></li>
-          <li><a
-            href={'https://www.mb-sportklub.com/wp-content/uploads/2023/02/MB-Mawashi-kup-Zreb.pdf'}>Žreb – MB Mawashi
-            Kup 2023</a></li>
-          <li><a
-            href={'https://www.mb-sportklub.com/wp-content/uploads/2023/02/MB-Internacionalni-kup-veterana-ZREB.pdf'}>Internacionalni
-            kup veterana - žreb – MB Mawashi
-            Kup 2023</a></li>
-          <li><a
-            href={'https://www.mb-sportklub.com/wp-content/uploads/2023/02/Mawashi-kup-Plan-takmicenja.pdf'}>Plan takmičenja – MB Mawashi
-            Kup 2023</a></li>
+          <li><a href={'https://www.mb-sportklub.com/wp-content/uploads/2023/02/Izvestaj-Mawashi-Kup-2023.pdf'}>{t("mawashi.link1")}</a></li>
+          <li><a href={'https://www.mb-sportklub.com/wp-content/uploads/2023/02/Rezultati-MB-Mawashi-Kup-2023.pdf'}>{t("mawashi.link2")}</a></li>
+          <li><a href={'https://www.mb-sportklub.com/wp-content/uploads/2023/02/Bilans-medalja-MB-Mawashi-Kup-2023.pdf'}>{t("mawashi.link3")}</a></li>
+          <li><a href={'https://www.mb-sportklub.com/wp-content/uploads/2023/02/Klubovi-ucesnici-Mawashi-Kup-2023.pdf'}>{t("mawashi.link4")}</a></li>
+          <li><a href={'https://www.mb-sportklub.com/wp-content/uploads/2023/02/Broj-prijavljenih-takmicara-i-ekipa-MB-Mawashi-Kup-2023.pdf'}>{t("mawashi.link5")}</a></li>
+          <li><a href={'https://www.mb-sportklub.com/wp-content/uploads/2023/02/MB-Mawashi-kup-Zreb.pdf'}>{t("mawashi.link6")}</a></li>
+          <li><a href={'https://www.mb-sportklub.com/wp-content/uploads/2023/02/MB-Internacionalni-kup-veterana-ZREB.pdf'}>{t("mawashi.link7")}</a></li>
+          <li><a href={'https://www.mb-sportklub.com/wp-content/uploads/2023/02/Mawashi-kup-Plan-takmicenja.pdf'}>{t("mawashi.link8")}</a></li>
         </ul>
-        <p>Izvandrednu atmosferu sa turnira možete pogledati na slikama ispod.</p>
-        <p><b>Pripreme i otvaranje turnira</b></p>
+        <p>{t("mawashi.atmosfera")}</p>
+        <p><b>{t("mawashi.pripreme")}</b></p>
         <ImageGallery items={pripreme}/>
-        <p><b>Takmičenje u katama</b></p>
+        <p><b>{t("mawashi.kate")}</b></p>
         <ImageGallery items={kate}/>
-        <p><b>Takmičenje u borbama</b></p>
+        <p><b>{t("mawashi.borbe")}</b></p>
         <ImageGallery items={borbe}/>
-        <p><b>Najatraktivniji takmičari</b></p>
+        <p><b>{t("mawashi.najatraktivniji")}</b></p>
         <ImageGallery items={najatraktivniji}/>
-        <p><b>Najmlađi i najslađi takmičari</b></p>
+        <p><b>{t("mawashi.najmladji")}</b></p>
         <ImageGallery items={najmladji}/>
-        <p><b>Veterani</b></p>
+        <p><b>{t("mawashi.veterani")}</b></p>
         <ImageGallery items={veterani}/>
-        <p><b>Klubovi</b></p>
+        <p><b>{t("mawashi.klubovi")}</b></p>
         <ImageGallery items={klubovi}/>
-        <p><b>MB Sport</b></p>
+        <p><b>{t("mawashi.mbSport")}</b></p>
         <ImageGallery items={mbsport}/>
-        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/14page0001-791x1024.jpg"}/>
-        <h2>Opšte informacije</h2>
-        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/14page0002-791x1024.jpg"}/>
-        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/page0002eng-791x1024.jpg"}/>
-        <h2>Obaveze takmičara</h2>
-        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/14page0003-791x1024.jpg"}/>
-        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/page0003eng-791x1024.jpg"}/>
-        <h2>Discipline i kategorije</h2>
-        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/14page0004-791x1024.jpg"}/>
-        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/page0004eng-791x1024.jpg"}/>
+        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/14page0001-791x1024.jpg"} alt={t("mawashi.imgAlt")}/>
+        <h2>{t("mawashi.opsteInfo")}</h2>
+        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/14page0002-791x1024.jpg"} alt={t("mawashi.imgAlt2")}/>
+        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/page0002eng-791x1024.jpg"} alt={t("mawashi.imgAlt2")}/>
+        <h2>{t("mawashi.obaveze")}</h2>
+        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/14page0003-791x1024.jpg"} alt={t("mawashi.imgAlt3")}/>
+        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/page0003eng-791x1024.jpg"} alt={t("mawashi.imgAlt3")}/>
+        <h2>{t("mawashi.discipline")}</h2>
+        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/14page0004-791x1024.jpg"} alt={t("mawashi.imgAlt4")}/>
+        <img src={"https://www.mb-sportklub.com/wp-content/uploads/2022/12/page0004eng-791x1024.jpg"} alt={t("mawashi.imgAlt4")}/>
       </div>
     </div>
-  )
+  );
 }
 
 export default MawashiKup2023;
