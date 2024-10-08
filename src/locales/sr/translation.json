@@ -4,6 +4,7 @@
     "veterani": "VETERANI",
     "blog": "BLOG",
     "kontakt": "KONTAKT",
+    "videi": "VIDEI",
     "mawashi": "MAWASHI KUP",
     "upis": "UPIŠI SE"
   },
@@ -130,5 +131,18 @@
     "link1": "Izveštaj – Mawashi Kup 2015",
     "link2": "Spisak klubova – Mawashi Kup 2015",
     "link3": "Brojno stanje – Mawashi Kup 2015"
+  },
+  "samoodbrana": {
+    "naslov": "SAMOODBRANA"
+  },
+  "contact": {
+    "contact_us": "Kontaktirajte nas",
+    "email": "Email",
+    "call_us": "Pozovite nas",
+    "phone": "Telefon",
+    "call_time": "(zvati od 12h do 23h bilo kog dana)",
+    "address": "Adresa",
+    "address_full": "Vladimira Mitrovića 27, Naselje Braće Jerković, Medaković 3, Beograd"
   }
+
 }

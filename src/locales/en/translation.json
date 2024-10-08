@@ -4,6 +4,7 @@
     "veterani": "VETERANS",
     "blog": "BLOG",
     "kontakt": "CONTACT",
+    "videi": "VIDEOS",
     "mawashi": "MAWASHI CUP",
     "upis": "SIGN UP"
   },
@@ -129,5 +130,17 @@
     "link1": "Report – Mawashi Cup 2015",
     "link2": "List of clubs – Mawashi Cup 2015",
     "link3": "Attendance – Mawashi Cup 2015"
+  },
+  "samoodbrana": {
+    "naslov": "SELF-DEFENSE"
+  },
+  "contact": {
+    "contact_us": "Contact us",
+    "email": "Email",
+    "call_us": "Call us",
+    "phone": "Phone",
+    "call_time": "(call from 12 PM to 11 PM any day)",
+    "address": "Address",
+    "address_full": "Vladimira Mitrovića 27, Naselje Braće Jerković, Medaković 3, Belgrade"
   }
 }
