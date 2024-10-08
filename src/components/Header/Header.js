@@ -80,7 +80,7 @@ const Header = () => {
           <a onClick={() => {
             if (menuClicked)
               setMenuClicked(false);
-          }} href={'/kontakt'}>{t('header.videi')}</a>
+          }} href={'https://www.youtube.com/@MBSPORTKLUB/videos'}>{t('header.videi')}</a>
         </li>
         <li>
           <a onClick={() => {
@@ -127,7 +127,7 @@ const Header = () => {
         <li><a href="/bivsi-sportisti">{t('header.veterani')}</a></li>
         <li><a href="/blog">{t('header.blog')}</a></li>
         <li><a href="/kontakt">{t('header.kontakt')}</a></li>
-        <li><a href="/kontakt">{t('header.videi')}</a></li>
+        <li><a href="https://www.youtube.com/@MBSPORTKLUB/videos">{t('header.videi')}</a></li>
         <li><a href="/mawashi" id={styles.changeColor}>{t('header.mawashi')}</a></li>
         {/*<li><a href="https://www.sportdata.org/karate/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=6254#a_eventhead">PRIJAVA ZA TURNIR</a></li>*/}
         <li className={styles.navbtn}><a href="/#form">{t('header.upis')}</a></li>
