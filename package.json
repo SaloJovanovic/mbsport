@@ -1,5 +1,6 @@
 {
   "name": "mbsport",
+  "homepage": "https://mbsport.rs/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
