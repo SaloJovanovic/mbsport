@@ -11,7 +11,11 @@
   "landing": {
     "poruka": "Upis besplatan do ispunjenja broja članova grupa početnika po uzrastu!",
     "naslov": "Moć borilačkih veština\nu tvom telu i umu!",
-    "upis": "UPIŠI SE"
+    "upis": "UPIŠI SE",
+    "mawashinaslov": "16. MB MAWASHI KUP 2025."
+  },
+  "mawashi2025": {
+    "naslov": "16. Mawashi Kup – 15. jun 2025."
   },
   "treneri": {
     "baneImePrezime": "BRANISLAV - BANE MILENKOVIĆ",

@@ -11,7 +11,11 @@
   "landing": {
     "poruka": "Registration is free until the number of members of the beginner groups by age is filled!",
     "naslov": "The power of martial arts\nin your body and mind!",
-    "upis": "SIGN UP"
+    "upis": "SIGN UP",
+    "mawashinaslov": "16. MB MAWASHI CUP 2025."
+  },
+  "mawashi2025": {
+    "naslov": "16th Mawashi Cup – 15 June 2025"
   },
   "treneri": {
     "baneImePrezime": "BRANISLAV - BANE MILENKOVIĆ",

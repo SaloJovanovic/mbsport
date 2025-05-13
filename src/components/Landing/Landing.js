@@ -10,6 +10,7 @@ const Landing = () => {
     <div className={styles.container}>
       <h2>{t('landing.poruka')}</h2>
       <h1>{t('landing.naslov')}</h1>
+      <a href={"/#mawashi2025"}>{t('landing.mawashinaslov')}</a>
       {/*<h1><span>M</span>oć <span id={styles.span}>b</span>orilačkih veština<br/>u tvom telu i umu!</h1>*/}
       <br/>
       <a href={"/#form"}>{t('landing.upis')}</a>
