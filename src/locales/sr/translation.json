@@ -9,7 +9,7 @@
     "upis": "UPIŠI SE"
   },
   "landing": {
-    "poruka": "Upis besplatan do ispunjenja broja članova grupa početnika po uzrastu!",
+    "poruka": "BESPLATAN UPIS DO 30. JUNA",
     "naslov": "Moć borilačkih veština\nu tvom telu i umu!",
     "upis": "UPIŠI SE",
     "mawashinaslov": "16. MB MAWASHI KUP 2025."
@@ -135,6 +135,12 @@
     "link1": "Izveštaj – Mawashi Kup 2015",
     "link2": "Spisak klubova – Mawashi Kup 2015",
     "link3": "Brojno stanje – Mawashi Kup 2015"
+  },
+  "besplatanUpis": {
+    "naslov": "BESPLATAN UPIS DO 30. JUNA",
+    "tekst1": "Pridruži se našem klubu besplatno i počni svoju borilačku avanturu!",
+    "tekst2": "Karate, Ju-Jutsu i Samoodbrana za sve uzraste – početnike, takmičare i rekreativce.",
+    "dugme": "UPIŠI SE ODMAH"
   },
   "samoodbrana": {
     "naslov": "SAMOODBRANA"

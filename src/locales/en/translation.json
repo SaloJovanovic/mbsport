@@ -9,7 +9,7 @@
     "upis": "SIGN UP"
   },
   "landing": {
-    "poruka": "Registration is free until the number of members of the beginner groups by age is filled!",
+    "poruka": "FREE ENROLLMENT UNTIL JUNE 30",
     "naslov": "The power of martial arts\nin your body and mind!",
     "upis": "SIGN UP",
     "mawashinaslov": "16. MB MAWASHI CUP 2025."
@@ -134,6 +134,12 @@
     "link1": "Report – Mawashi Cup 2015",
     "link2": "List of clubs – Mawashi Cup 2015",
     "link3": "Attendance – Mawashi Cup 2015"
+  },
+  "besplatanUpis": {
+    "naslov": "FREE ENROLLMENT UNTIL JUNE 30",
+    "tekst1": "Join our club for free and start your martial arts journey!",
+    "tekst2": "Karate, Ju-Jutsu and Self-Defense for all ages – beginners, competitors and recreational athletes.",
+    "dugme": "SIGN UP NOW"
   },
   "samoodbrana": {
     "naslov": "SELF-DEFENSE"

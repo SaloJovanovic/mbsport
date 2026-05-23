@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.copyright}>
-        <a href={'https://digitalizuj.rs/'}>&copy; {new Date().getFullYear()} {t("footer.copyright")}</a>
+        {/*<a href={'https://digitalizuj.rs/'}>&copy; {new Date().getFullYear()} {t("footer.copyright")}</a>*/}
       </div>
     </footer>
   );

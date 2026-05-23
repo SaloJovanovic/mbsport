@@ -17,6 +17,7 @@ import UnderConstruction from "./components/UnderConstruction/UnderConstruction"
 import Samoodbrana from "./components/Samoodbrana/Samoodbrana";
 import Contact from "./components/Contact/Contact";
 import Mawashi2025 from "./components/Mawashi2025/Mawashi2025";
+import BesplatanUpis from "./components/BesplatanUpis/BesplatanUpis";
 
 function App() {
   const [loading, setLoading] = useState(false); // Loader je po defaultu false
@@ -70,7 +71,10 @@ function App() {
       <BrowserRouter>
         <Header/>
         <Routes>
-          <Route path="/" element={<><Landing/><Mawashi2025/><Treneri/><Samoodbrana/><Form/></>}/>
+          <Route path="/" element={<><Landing/>
+            <BesplatanUpis/>
+            {/*<Mawashi2025/>*/}
+            <Treneri/><Samoodbrana/><Form/></>}/>
           <Route path="/mawashi" element={<MawashiKupovi/>}/>
           <Route path="/mawashi/2023" element={<MawashiKup2023/>}/>
           <Route path="/mawashi/2018" element={<MawashiKup2018/>}/>

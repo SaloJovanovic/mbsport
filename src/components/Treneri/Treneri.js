@@ -23,16 +23,16 @@ const Treneri = () => {
 
   const baneSlike = [
     {
-      original: "https://i.ibb.co/X3kMKk4/bane.jpg",
-        thumbnail: "https://i.ibb.co/X3kMKk4/bane.jpg",
+      original: bane,
+        thumbnail: bane,
     },
     {
-      original: "https://i.ibb.co/TT06RJS/11.jpg",
-      thumbnail: "https://i.ibb.co/TT06RJS/11.jpg",
+      original: bane1,
+      thumbnail: bane1,
     },
     {
-      original: "https://i.ibb.co/1bXPcZC/22.jpg",
-      thumbnail: "https://i.ibb.co/1bXPcZC/22.jpg",
+      original: bane2,
+      thumbnail: bane2,
     },
   ]
 
