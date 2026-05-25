@@ -136,9 +136,20 @@
     "link3": "Attendance – Mawashi Cup 2015"
   },
   "besplatanUpis": {
-    "naslov": "FREE ENROLLMENT UNTIL JUNE 30",
-    "tekst1": "Join our club for free and start your martial arts journey!",
-    "tekst2": "Karate, Ju-Jutsu and Self-Defense for all ages – beginners, competitors and recreational athletes.",
+    "naslov": "Free Mini Karate School for Beginners",
+    "podnaslov": "Groups ages 5–9 and 10–14 · May 7 – June 30, 2026",
+    "info": "Starting May 7, 2026, all interested children from the younger group (ages 5–9) and the older group (ages 10–14) are welcome every Tuesday and Thursday at the training sessions held at the UVC \"Šumice\" Sports Centre.",
+    "mladjaGrupa": "Younger group · ages 5–9",
+    "mladjaVreme": "6:30 PM – 7:30 PM",
+    "starijaGrupa": "Older group · ages 10–14",
+    "starijaVreme": "7:30 PM – 8:30 PM",
+    "starijaVreme2": "Make-up session: 8:30 PM – 9:30 PM (Tuesday & Thursday, main hall on the ground floor)",
+    "adresa": "UVC \"Šumice\" · Ustanička 125/1, Voždovac",
+    "diploma": "At the end of June, all participants who attend regularly will receive a diploma, in agreement with the Belgrade Karate Association, the municipality of Voždovac, and UVC \"Šumice\".",
+    "uslov": "The only requirement: regular attendance!",
+    "galerijaGrupa1": "Younger group (ages 5–9) – training highlights",
+    "galerijaGrupa2": "Older group (ages 10–14) – training highlights",
+    "videoDan": "Video clips from training",
     "dugme": "SIGN UP NOW"
   },
   "samoodbrana": {

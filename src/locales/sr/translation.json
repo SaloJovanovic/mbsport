@@ -137,9 +137,20 @@
     "link3": "Brojno stanje – Mawashi Kup 2015"
   },
   "besplatanUpis": {
-    "naslov": "BESPLATAN UPIS DO 30. JUNA",
-    "tekst1": "Pridruži se našem klubu besplatno i počni svoju borilačku avanturu!",
-    "tekst2": "Karate, Ju-Jutsu i Samoodbrana za sve uzraste – početnike, takmičare i rekreativce.",
+    "naslov": "Mala besplatna karate škola za početnike",
+    "podnaslov": "Grupa 5–9 i 10–14 godina · od 07.05. do 30.06.2026.",
+    "info": "Od 07.05.2026. sve zainteresovane iz mlađe grupe (5–9 god.) i starije (10–14 god.) očekujemo svakog utorka i četvrtka na treningu u Ustanovi Voždovački centar 'Šumice'.",
+    "mladjaGrupa": "Mlađa grupa · 5–9 godina",
+    "mladjaVreme": "18:30 – 19:30 h",
+    "starijaGrupa": "Starija grupa · 10–14 godina",
+    "starijaVreme": "19:30 – 20:30 h",
+    "starijaVreme2": "Nadomestni termin: 20:30 – 21:30 h (utorak i četvrtak, velika svečana sala u prizemlju)",
+    "adresa": "UVC 'Šumice' · Ustanička 125/1, Voždovac",
+    "diploma": "Krajem juna svi polaznici koji redovno dolaze na treninge dobiće odgovarajuću diplomu, u dogovoru sa BKS-om, opštinom Voždovac i UVC 'Šumice'.",
+    "uslov": "Jedini uslov: redovan dolazak na treninge!",
+    "galerijaGrupa1": "Mlađa grupa (5–9 god.) – utisci sa treninga",
+    "galerijaGrupa2": "Starija grupa (10–14 god.) – utisci sa treninga",
+    "videoDan": "Video klipovi sa treninga",
     "dugme": "UPIŠI SE ODMAH"
   },
   "samoodbrana": {

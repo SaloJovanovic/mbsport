@@ -1,54 +1,210 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
+$red: #982c2c;
+$bg: #111111;
+$bg2: #1a1a1a;
+$text: whitesmoke;
+
 .container {
-  background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%);
+  background: $bg;
   font-family: "Oswald", sans-serif;
+  color: $text;
   padding: 80px 40px;
-}
-
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.textSection {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 60px;
+}
+
+/* ── HEADER ── */
+.header {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto;
 
   h2 {
-    font-size: 3rem;
-    color: #982c2c;
+    font-size: 2.8rem;
     text-transform: uppercase;
-    line-height: 1.1;
+    color: $red;
+    margin: 0 0 14px;
+    line-height: 1.15;
+  }
+}
+
+.podnaslov {
+  font-size: 1.3rem;
+  color: #aaa;
+  margin: 0 0 18px;
+  letter-spacing: 1px;
+}
+
+.info {
+  font-size: 1.1rem;
+  color: $text;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── RASPORED ── */
+.raspored {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+  background: $bg2;
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+}
+
+.grupaCard {
+  flex: 1;
+  min-width: 240px;
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+
+  h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: $red;
     margin: 0;
-    border-left: 6px solid #982c2c;
-    padding-left: 20px;
   }
 
   p {
-    font-size: 1.2rem;
-    color: whitesmoke;
+    font-size: 0.9rem;
+    color: #aaa;
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.5;
+  }
+}
+
+.grupaIcon {
+  font-size: 2.4rem;
+}
+
+.vreme {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: $text;
+  letter-spacing: 1px;
+}
+
+.napomena {
+  font-size: 0.82rem !important;
+  color: #888 !important;
+  font-style: italic;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+
+  span {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: $red;
+    letter-spacing: 2px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    border-left: 2px solid $red;
+    border-right: 2px solid $red;
+    padding: 12px 6px;
+  }
+}
+
+/* ── DIPLOMA ── */
+.diplomaSection {
+  background: $bg2;
+  border-left: 5px solid $red;
+  border-radius: 8px;
+  padding: 28px 32px;
+  max-width: 860px;
+  margin: 0 auto;
+  width: 100%;
+
+  p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: $text;
+    margin: 0 0 12px;
   }
 
-  a {
-    display: inline-block;
-    margin-top: 10px;
-    background: #982c2c;
-    padding: 14px 32px;
-    border-radius: 16px;
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 1.3rem;
+  strong {
+    font-size: 1.15rem;
+    color: $red;
     text-transform: uppercase;
-    align-self: flex-start;
+  }
+}
+
+/* ── GALERIJA ── */
+.galerijaSection {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+
+  h3 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: $red;
+    margin: 0 0 20px;
+    border-bottom: 2px solid $red;
+    padding-bottom: 8px;
+  }
+}
+
+/* ── VIDEO ── */
+.videoSection {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+
+  h3 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: $red;
+    margin: 0 0 20px;
+    border-bottom: 2px solid $red;
+    padding-bottom: 8px;
+  }
+}
+
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+
+  video {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #000;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+  }
+}
+
+/* ── CTA ── */
+.cta {
+  display: flex;
+  justify-content: center;
+
+  a {
+    background: $red;
+    padding: 16px 48px;
+    border-radius: 16px;
+    color: $text;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
     transition: background 0.2s ease;
 
     &:hover {
@@ -57,48 +213,52 @@
   }
 }
 
-.videoSection {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-
-  video {
-    width: 100%;
-    max-width: 480px;
-    height: 300px;
-    border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
-    object-fit: cover;
-  }
-}
-
+/* ── RESPONSIVE ── */
 @media screen and (max-width: 800px) {
   .container {
-    padding: 50px 20px;
-  }
-
-  .content {
-    flex-direction: column;
+    padding: 50px 16px;
     gap: 40px;
   }
 
-  .textSection {
-    h2 {
-      font-size: 2rem;
-    }
+  .header h2 {
+    font-size: 1.8rem;
+  }
 
-    p {
-      font-size: 1rem;
-    }
+  .info {
+    font-size: 1rem;
+  }
 
-    a {
-      align-self: center;
+  .raspored {
+    flex-direction: column;
+  }
+
+  .separator {
+    padding: 8px 0;
+
+    span {
+      writing-mode: horizontal-tb;
+      border-left: none;
+      border-right: none;
+      border-top: 2px solid $red;
+      border-bottom: 2px solid $red;
+      padding: 6px 16px;
     }
   }
 
-  .videoSection {
+  .videoGrid {
+    grid-template-columns: repeat(2, 1fr);
+
     video {
-      max-width: 100%;
+      height: 140px;
     }
+  }
+
+  .diplomaSection {
+    padding: 20px 16px;
+  }
+
+  .cta a {
+    font-size: 1.2rem;
+    padding: 14px 32px;
   }
 }
