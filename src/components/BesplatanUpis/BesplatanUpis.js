@@ -55,6 +55,13 @@ const BesplatanUpis = () => {
 
   return (
     <div className={styles.container}>
+      {/* ── PROMO VIDEO ── */}
+      <div className={styles.promoVideo}>
+        <video autoPlay loop muted playsInline controls>
+          <source src="/videos/1779279660504209.MP4" type="video/mp4" />
+        </video>
+      </div>
+
       {/* ── HEADER ── */}
       <div className={styles.header}>
         <h2>{t("besplatanUpis.naslov")}</h2>
@@ -71,7 +78,7 @@ const BesplatanUpis = () => {
           <p>{t("besplatanUpis.adresa")}</p>
         </div>
         <div className={styles.separator}>
-          <span>UTK &amp; ČET</span>
+          <span>UTO &amp; ČET</span>
         </div>
         <div className={styles.grupaCard}>
           <div className={styles.grupaIcon}>🥋</div>

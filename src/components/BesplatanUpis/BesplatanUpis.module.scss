@@ -15,6 +15,23 @@ $text: whitesmoke;
   gap: 60px;
 }
 
+/* ── PROMO VIDEO ── */
+.promoVideo {
+  display: flex;
+  justify-content: center;
+
+  video {
+    width: 100%;
+    height: 100%;
+    max-width: 760px;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 12px 48px rgba(152, 44, 44, 0.35), 0 4px 20px rgba(0, 0, 0, 0.7);
+    border: 2px solid rgba(152, 44, 44, 0.4);
+  }
+}
+
 /* ── HEADER ── */
 .header {
   text-align: center;
@@ -243,6 +260,11 @@ $text: whitesmoke;
       border-bottom: 2px solid $red;
       padding: 6px 16px;
     }
+  }
+
+  .promoVideo video {
+    border-radius: 10px;
+    max-height: 320px;
   }
 
   .videoGrid {
